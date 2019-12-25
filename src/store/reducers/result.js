@@ -1,4 +1,4 @@
-import * as actionTypes from '../actions'
+import * as actionTypes from '../actions';
 
 const initialState = {
     counter: 0,
@@ -10,7 +10,7 @@ const reducer = (state = initialState, action) => {
         case actionTypes.STORE_RESULT:
             return {
                 ...state,
-                results: state.results.concat({id: new Date, value: action.counter})
+                results: state.results.concat({id: new Date(), value: action.counter})
             }
         case actionTypes.DELETE_RESULT:
             return {
